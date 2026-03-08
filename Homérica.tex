@@ -1,0 +1,1364 @@
+\documentclass[11pt,twoside]{article}
+\usepackage{fontspec}
+\usepackage{editio}
+\usepackage{polyglossia}
+\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.65cm,inner=2.20cm,outer=1.65cm,bottom=2.50cm]{geometry}
+\setmainlanguage{spanish}
+\setmainfont{Alt Standard}[RawFeature=lnum]
+\usepackage[noeledsec,nocritical,nofamiliar,noledgroup,nopenalties]{reledmac}
+\linenummargin{outer}
+\usepackage[breaklinks=true,hidelinks]{hyperref}
+%
+\title{\huge\textbf{HOMÉRICA}}
+\date{\vspace{40pt} \textsc{Colección de la traducción fragmentaria de las obras homéricas por}\\\vspace*{14pt}{\huge\textsc{\textbf{Leopoldo Lugones}}}\\\fontsize{40}{11}\selectfont{\vfill\textbf{\LaTeX}}}
+\author{}
+%
+%Para que el título del índice esté en smcp.
+\usepackage{tocloft}	
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cfttoctitlefont}{\bfseries\scshape}
+%Salto de línea.
+\newsavebox{\dbox}
+\newcommand{\dlgo}[2]{\sbox{\dbox}{#1}\parbox[t]{\linewidth}{#1\strut\\[0pt]\hspace*{\wd\dbox}\hspace{\fontdimen2\font}#2\strut}}
+%
+\newcommand{\ehuno}{\emph{\textbf{E.-H.\textsuperscript{(1)}}}}
+\newcommand{\ehdos}{\emph{\textbf{E.-H.\textsuperscript{(2)}}}}
+\newcommand{\ehter}{\emph{\textbf{E.-H.\textsuperscript{(3)}}}}
+\newcommand{\ehctr}{\emph{\textbf{E.-H.\textsuperscript{(4)}}}}
+\newcommand{\neh}{\emph{\textbf{N. E.-H.}}}
+%
+%
+\begin{document}
+\pagenumbering{gobble}
+	\maketitle
+\newpage
+%
+\null
+\vfill
+\begin{flushright}
+	Edición y composición en XeLaTeX por \textsc{Ioannes Bracledes} (2025).
+\end{flushright}
+\newpage
+%
+\tableofcontents
+\newpage
+%
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\section*{\centering\textsc{Prefacio}}
+\addcontentsline{toc}{section}{\textsc{Prefacio}}\par
+%
+\textsc{Las traducciones}, en el área de la literatura, además de tener su valor filológico o científico por su precisión, tienen valor estético. El gran \textsc{Leopoldo Lugones}, el escritor argentino por esencia, tradujo parte de las obras homéricas, desde episodios enteros hasta apenas unas líneas: tal es el valor estético que merecen ser editadas por lo mismo, como cualquier traducción. El traductor, además de eximio helenista, fue un un auténtico compositor, un genio del \emph{verbo poético}; por lo mismo, además de imponerse la tarea de traducir fielmente a Homero desde su lengua, trasladando las acepciones al castellano, se impuso también la tarea de trasladar el ritmo, la forma. Lugones adopta el metro alejandrino por considerarlo, en su extensión y estructura, el más cercano al hexámetro dactílico, es así que traduce la primera línea como «Canta, diosa, el encono de Aquiles Peleyades», desde el mítico «Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος».\par
+%
+El sistema de siglado para agilizar las referencias es el siguiente: \ehuno = \emph{Estudios Helénicos I: La funesta Helena} (1923); \ehdos = \emph{Estudios Helénicos II: Un paladín de la Ilíada} (1923); \ehter = \emph{Estudios Helénicos III: La dama de la Odisea} (1924); \ehctr = \emph{Estudios Helénicos IV: Héctor el domador} (1924); \neh = \emph{Nuevos Estudios Helénicos} (1928). Todos fueron editados por la Biblioteca Argentina de Buenas Ediciones Literarias (Babel).\par
+\newpage
+%
+\pagenumbering{gobble}
+\section*{\centering\huge\textsc{Ilíada}}
+\addcontentsline{toc}{section}{\emph{\textsc{Ilíada}}}
+\newpage
+%
+\pagenumbering{arabic}
+\setcounter{page}{3}
+\section*{\centering\textbf{\textsc{Canto} 1}\footnote{\neh, pp. 58-80.}}
+\addcontentsline{toc}{subsection}{\textsc{Canto 1}}
+%
+\beginnumbering
+\pstart
+\textsc{Canta}, diosa, el encono de Aquiles Peleyades,\\
+que, aciago, a los aqueos causó males sin cuento,\\
+y tantas nobles almas de héroes echó al Hades,\\
+dando a perros y buitres sus cuerpos de alimento\\
+(pues así los designios Zeus se realizaron)\\
+desde que por primera vez riñendo, quebraron\\
+el Atrida, rey de hombres, y el deífico Aquiles.\par
+¿Cuál fué de entre los dioses el que los puso hostiles?\\
+El hijo de Latona y Zeus, quien resentido\\
+con el rey, al ejército envió maligna peste\\
+que a las tropas diezmaba, porque había ofendido\\
+Atrida al sacerdote Crises, cuando llegó éste\\
+a las veleras naves aqueas, aportando\\
+por rescate de su hija multa inmensa, y llevando\\
+en su mano las ínfulas del flechador Apolo\\
+a un cetro de oro atadas; con que imploró, no sólo\\
+a ambos Atridas, jefes de pueblos, sino a cada\\
+\dlgo{uno de los aqueos, diciéndoles:}{--Oh Atridas}\\
+y soldados aqueos de las grebas pulidas,\\
+quieran los dioses desde su olímpica morada\\
+que la ciudad de Príamo toméis, y con buen sino\\
+volváis a vuestra tierra; mas, dadme a mi hija amada,\\
+aceptando el rescate, y acatando al divino\\
+\dlgo{flechero Apolo.}{Todos aclaman que se deba}\\
+respeto al sacerdote, recibiendo la multa.\\
+Agamenón Atrida solamente no aprueba;\\
+antes, con malos modos, lo echa de allá y lo insulta:\par
+--Que no vuelva yo, anciano, ni ahora ni luego a hallarte,\\
+ya te quedes o tornes, junto a la flota anclada;\\
+pues ni el cetro ni la ínfula del dios podrán guardarte.\\
+No soltaré a tu hija, antes que envejezca expatriada,\\
+tejiendo en casa, en Argos, y durmiendo conmigo.\\
+Y vete, y no me irrites, y evita así el castigo.\par
+Dice, y medroso el viejo, lo acata y abandona\\
+en silencio, y costeando va el estruendoso mar;\\
+y al rey Apolo, vástago de la crespa Latona,\\
+mientras se aparta, empieza con fervor a rogar:\par
+--Oyeme, dios del arco de plata, protector\\
+de Crisa y de la santa Kila, dominador\\
+de Ténedos, ¡oh Esmintio!: Si tu iglesia graciosa\\
+labrar supe, y quemarte pingües muslos de cabras\\
+y toros, que los dánaos, conforme a estas palabras,\\
+mis lágrimas expíen con tu flecha luctuosa.\par
+Rogó así, y Febo Apolo que lo oyó, con airado\\
+corazón, baja al punto del Olimpo encumbrado,\\
+al hombro arco y aljaba de bien cerrado broche.\\
+Y en la espalda resuénanle, al moverse enojado,\\
+las flechas, cuando avanza semejante a la noche.\\
+Siéntese después, lejos de las naves, y tira\\
+una flecha, al terrible son del arco de plata.\\
+Mulas y ágiles perros hiere primero su ira;\\
+mas, luego, con fatales tiros los hombres mata,\\
+y arden sin tregua innúmeros difuntos en la pira.\par
+Nueve días las tropas flechó el dios por doquiera;\\
+mas, el décimo, en junta convocó al pueblo Aquiles;\\
+pues lo inspiró la diosa de blancos brazos, Hera,\\
+ansiosa por los dánaos que veía morir.\\
+Y luego que, llamados, la junta se reuniera,\\
+alzóse el raudo Aquiles, y así empezó a decir:\par
+--Atrida, creo que ahora, nuevamente vagando,\\
+retroceder debemos, si, la muerte evitando,\\
+guerra y peste no rinden juntas a los aqueos.\\
+Mas, ea, consultémonos ya de algún adivino\\
+sacerdote o intérprete de sueños (pues divino\\
+el sueño es también) con que nos diga él sin rodeos\\
+qué irrita a Febo Apolo: si nos reclama, acaso,\\
+promesas o hecatombes, o si, aceptando el craso\\
+humo de albos corderos y de escogidas cabras,\\
+\dlgo{nos quitará el plageño.}{Dichas estas palabras,}\\
+volvió a sentarse. Entonces se alzó el más excelente\\
+augur, Calcas Testórides, quien sabiendo lo que era,\\
+es y será, las naves aqueas condujera\\
+hasta Ilión, con ayuda del don clarividente\\
+que Febo Apolo hiciérale. Y así, benevolente\\
+\dlgo{los arengó:}{--Oh Aquiles, caro a Zeus, pues mandarme}\\
+quieres que explique la ira de Apolo el real flechero,\\
+lo diré; mas prométeme y júrame primero\\
+que de palabra y obra socorro has de prestarme;\\
+no irrite yo a quien todos los argivos comanda\\
+con gran poder, y acatan los aqueos; pues si anda\\
+mal con el rey un súbdito como aquél puede más,\\
+aunque trague su cólera en el mismo momento\\
+hasta satisfacerla guarda el resentimiento\\
+en su pecho. Declara, pues, si me salvarás.\par
+\dlgo{Contestóle así el rápido Aquiles:}{--Ten confianza,}\\
+y el augurio que sabes, dínoslo sin tardanza;\\
+pues juro por Apolo, caro a Zeus, y a quien oras,\\
+Calcas, cuando a los dánaos su oráculo asesoras,\\
+que ni uno de ellos, mientras esté yo vivo y sano,\\
+junto a las hondas naves pondrá en ti osada mano;\\
+aunque te refieras a Agamenón, que a todos\\
+los aqueos se alaba de recuperar ufano.\par
+El adivino ilustre tomó confianza y dijo:\\
+--No se queja él por votos ni hecatombes, de fijo;\\
+mas por su sacerdote que Agamenón vejó,\\
+pues no libertó a su hija ni el rescate aceptó.\\
+Por esto el Flechero hízonos el mal y todavía\\
+nos lo hará, y de las Parcas de la peste sombría\\
+no ha de librarnos mientras no quede reparada\\
+la ofensa, devolviéndose, sin multa rescatada,\\
+al caro padre aquella joven de lindos ojos;\\
+y una sacra hecatombe sea en Crisa inmolada.\\
+Así conseguiremos aplacar sus enojos.\par
+Dichas estas palabras, volvió a sentarse, cuando\\
+poseído de angustia se alzó el héroe Atrida,\\
+Agamenón potente, la negra entraña henchida\\
+de rencor, y con ojos centelleantes mirando\\
+\dlgo{a Calcas torvamente, díjole:}{--Mago avieso,}\\
+nunca me anuncias nada feliz; antes gozando\\
+en predecir desgracias, sólo haces mal con eso.\\
+Y ahora entre los dánaos declamas, augurando\\
+que el Flechero tortúralos así porque no quise\\
+el rescate halagüeño de la doncella Crise,\\
+a quien deseaba en casa tener, pues la prefiero\\
+realmente a Clitemnestra mi legítima esposa,\\
+ya que en cuerpo ni en talle, ni por diestra o graciosa\\
+le es inferior; mas, siempre que mejor sea, quiero\\
+devolverla, y que el pueblo se salve y no perezca.\\
+Pero aprontadme ya otro premio, pues no es cumplido\\
+que así el único argivo que ninguno merezca\\
+sea yo, viendo todos que el mío habré perdido.\par
+Mas, el divino Aquiles respondió de este modo:\\
+--Atrida, el más glorioso y avariento de todos,\\
+¿qué premios los magnánimos aqueos han de darte,\\
+si riquezas comunes no hay en ninguna parte?\\
+Repartimos cuanto en las ciudades conquistamos,\\
+y no conviene al pueblo que a juntarlo volvamos.\\
+Remite al dios la joven, y cuando a los aqueos\\
+Zeus nos entregue Troya, la del fuerte bastión,\\
+triple o cuádruple pago te asignará el saqueo.\par
+Respondió a estas palabras el rey Agamenón:\\
+--Por más bravo que seas, no intentes con desvío\\
+traerme, ínclito Aquiles, a engaño o persuasión.\\
+¿Por conservar tu premio, quieres que deje el mío,\\
+y para esto me impones que entre la doncella?\\
+Lo haré si los magnánimos aqueos dan por ella\\
+algo que la compense, conforme a mi albedrío.\\
+Y si no me lo dieran, yo mismo iré a tomar\\
+tu premio, o el de Ulises, o el de Ayax, y el que sea\\
+se indignará. Mas, de esto, después hemos de hablar.\\
+Ahora, pronto botemos a la divina mar\\
+negro bajel que una hábil tripulación provea;\\
+y una hecatombe, junto con la lozana Crise,\\
+embarquemos, poniéndolas al mando de un guerrero:\\
+Ayax, Idomeneo, o el deífico Ulises,\\
+o tú, Pelida, que eres de todos el más fiero,\\
+para que con las víctimas aplaques al Flechero.\par
+Mas, de través mirándolo, contestó el raudo Aquiles:\\
+--Ay de mí, avaro impúdico ¿habrá un argivo, acaso,\\
+que obedezca tus órdenes, ya siguiendo tus pasos,\\
+ya afrontando, valiente, los combates viriles?\\
+No fue por los lanceros troyanos provocado\\
+como vine a la lucha, que en nada me ofendieron,\\
+ni jamás mis caballos y vacas se han llevado,\\
+ni en Ptía la prolífica y feraz, destruyeron\\
+nuestras cosechas, porque siempre nos dividieron\\
+muchas sierras umbrías y el mar alborotado.\\
+Mas, contigo vinimos, oh infame, a que gozaras\\
+con dar en los de Troya venganza a Menelao,\\
+y a ti, cara de perro, que ya en nada reparas.\\
+Y amenazas privarme del premio que me dieron\\
+por mis grandes fatigas los dánaos, aunque poca\\
+sale siempre ante el tuyo la parte que me toca\\
+de las ricas ciudades troyanas que rindieron.\\
+Si bien yo aguanto el peso más arduo de la lucha,\\
+y al hacerse el reparto tu recompensa es mucha\\
+y la mía pequeña, siempre a mis naves vuelvo\\
+contento, aunque cansado de pelear. Mas, resuelvo\\
+tornar ya a Ptía, viendo que irme a casa es mejor\\
+en las cóncavas naves, que a costa de mi honor,\\
+lucro y caudal seguirte granjeando aquí a la vez.\par
+\dlgo{Agamenón, rey de hombres, repúsole:}{--Huye, pues,}\\
+si se te antoja. No te ruego que a causa mía\\
+te quedes. Me harán otros honrosa compañía,\\
+y sobre todo el próvido Zeus. Que tú, el más odioso\\
+me eres entre los reyes a quienes Dios ayuda,\\
+pues de riña y discordias andas siempre gustoso.\\
+Y si tu fuerza es tanta, débeslo a un dios, sin duda.\\
+Vete con naves y hombres, y reina en paz completa\\
+sobre los mirmidones, que tu ira no me inquieta.\\
+Mas ya que Febo Apolo va Criseida a quitarme,\\
+y con mi buque y gente debo yo enviarla en prenda\\
+te amenazo con irme yo en persona a tu tienda,\\
+y a la linda Briseida, tu galardón, llevarme;\\
+para que veas cómo soy yo el que puede más,\\
+y nadie ose conmigo compararse jamás.\par
+Tal dijo, y el Peliónida sintió que lo angustiaba\\
+su corazón, dudando dentro el pecho velludo,\\
+si sacaba a lo largo del muslo el sable agudo\\
+y apartando a los otros, al Atrida mataba,\\
+o si su furia y cólera reprimía y calmaba.\\
+Mientras así agitábanse su corazón y mente,\\
+y que desenvainando ya iba la espada ingente,\\
+bajó Atenea del cielo, pues la enviaba la diosa\\
+de blancos brazos, Hera, que amaba cordialmente\\
+a los dos, y por ambos andaba cuidadosa.\\
+De atrás tiró al Pelióńida por los cabellos rojos,\\
+visible a él solo, que otro ninguno la ha advertido;\\
+volvióse aquél atónito, y al punto ha conocido\\
+a Palas Atenea por sus terribles ojos;\\
+con que aladas palabras así le ha dirigido:\par
+--Hija del dios portaégida, ¿a qué viniste? ¿Acaso\\
+a presenciar la ofensa de Agamenón Atrida?\\
+Mas, puedo predecirte como seguro caso,\\
+que pronto su insolencia le costará la vida.\par
+Atena la ojizarca contestóle prudente:\\
+--He venido del cielo para hacer que, obediente,\\
+tu cólera reprimas; pues me envía la diosa\\
+de blancos brazos, Hera, que os ama cordialmente\\
+a los dos, y que andaba por ambos cuidadosa.\\
+Cesa, pues, la disputa, no desnudes la espada,\\
+y oféndelo de boca, si hacerlo así te agrada.\\
+Te prometo que un día, triple y brillante premio\\
+tendrás por este ultraje. Mas, cede a nuestro apremio\\
+\dlgo{Y acátanos ya.}{Aquiles de raudos pies contesta:}\\
+--Más vale observar, diosa, vuestra orden sin protesta,\\
+aunque el corazón tengo grandemente enojado;\\
+pues a quien oye a los dioses, es de ellos escuchado.\par
+Dijo, y puesta la recia mano al puño argentino,\\
+envainó la ancha espada, dócil a Atena, y ella\\
+tornó al Olimpo donde con los otros divinos\\
+\dlgo{Zeus portaégida mora.}{Mas, con nueva querella,}\\
+al Atrida el peliónida increpó siempre acerbo:\par
+--Borracho de ojos cínicos y corazón de ciervo,\\
+nunca osaste en la guerra con los del pueblo armarte\\
+o ir con los principales aqueos al acecho,\\
+por miedo a la muerte. Sin duda es más provecho,\\
+en el gran campo aqueo despojar de su parte\\
+a quien te contradiga. Rey que voraz impera\\
+sobre menguada gente, porque de otra manera\\
+lanzabas hoy, Atrida, tu último insulto aquí,\\
+sobre gran prenda quiero jurarte algo más: ¡Sí,\\
+por este cetro que hojas ni ramas dará nunca,\\
+pues desde que en el monte dejó su cepa trunca,\\
+el bronce al tornearlo privólo, con certeza,\\
+de que le retoñaran el follaje ni corteza;\\
+y que en sus manos llevan los dánaos al presente,\\
+cuando según las leyes de Dios juzgan fielmente:\\
+con tal prenda te juro que un día todo aqueo\\
+se acordará de Aquiles, y en tu vano deseo\\
+de ayudarlos, cuando Héctor tantos mate valiente,\\
+desgarrará honda pena en tu corazón furioso,\\
+porque al principal de ellos no honraste respetuoso!\par
+Tal se expresó el Pelida, contra el suelo arrojando\\
+su cetro tachonado de oro, y sentóse enfrente\\
+del Atrida que se iba con más furor cargando.\\
+Pero entonces de entre ellos se alzó el blandilocuente\\
+orador de los pilios, Néstor, cuya cadente\\
+palabra, de su lengua, como la miel fluía.\\
+Ya dos generaciones de hombres de artuculada\\
+voz, que fueron nacidas y consigo criadas\\
+en la divina Pylos, ante él pasado habían.\\
+Y sobre la tercera mandaba todavía.\\
+Este fué el que, arengándolos, benevolente dijo:\par
+--¡Oh dioses, qué gran duelo para la tierra aquea!\\
+Y cómo a los troyanos, y a Príamo y sus hijos,\\
+satisfacción inmensa causaría, de fijo,\\
+saber vuestro altercado, siendo que en la pelea\\
+y el consejo estáis sobre todos los dánaos. Pero\\
+desde que sois más jóvenes, condescended primero;\\
+pues yo frecuenté otrora varones principales,\\
+mejores que nosotros, y no me desoyeron.\\
+Todavía no he visto ni veré hombres iguales\\
+a Piritoo, Driante rey de pueblos, Keneo,\\
+Exadio y el deífico Polifemo, y Teseo\\
+el Egeída, que era como los inmortales.\\
+Bravos entre los bravos que alimentó la tierra,\\
+ellos a los centauros monteses dieron guerra\\
+por más bravos, matándolos en terrible exterminio.\\
+Para incorporarme a ellos, dejé la tierra Apía,\\
+pues fuí allá desde Pylos, mi lejano dominio,\\
+y a su propio llamado luché por cuenta mía.\\
+Ningún hombre de ahora resistirlos podría;\\
+y, no obstante, acataban mis consejos realmente.\\
+Prestadme, así, obediencia, que es lo más conveniente.\\
+Ni tú, aunque el mejor seas, la muchacha le quites,\\
+puesto que los aqueos con ella lo han premiado.\\
+Ni tú, Pelida, quieras altercar, igualado\\
+con el rey, ya que en honra ninguno le compite\\
+de entre los portacetros por Zeus glorificados.\\
+Ahora, si por tu parte tienes más valentía,\\
+y si diosa es la excelsa madre que a luz te ha dado,\\
+el puede más, pues reina sobre la mayoría.\\
+Y tú, Atrida, apacigua tu cólera, y depón\\
+tu encono contra Aquiles, que gran resguardo presta\\
+a todos los aqueos en la guerra funesta.\par
+Contestó, así diciéndole, el rey Agamenón:\\
+--Sí, cuanto has dicho, anciano, por cierto es de razón;\\
+pero este hombre pretende sobreponerse a todos,\\
+y a todos dirigirlos y mandar, de tal modo\\
+que nadie ha de aceptárselo. ¿Por que bravo lo hicieron\\
+los dioses, que insultara también le permitieron?\par
+Mas el divino Aquiles lo interrumpió exclamando:\\
+--Por vil y por cobarde con razón pasaría,\\
+si a todo cuanto dices cediera. Impón el mando\\
+a otros, no a mí, pues nunca más pienso obedecerte.\\
+Pero oye esto y consérvalo en tu alma bien grabado:\\
+no disputaré a nadie ni a ti, con mano fuerte,\\
+la joven, ya que en suma quitáis lo que habéis dado;\\
+mas, de lo que me resta junto al negro y ligero\\
+bajel, nada podrías tomar, si yo no quiero.\\
+De lo contrario, inténtalo; y así éstos sin tardanza\\
+verán tu negra sangre chorreando por mi lanza.\par
+Habiendo altercado ambos así, en pie se pusieron,\\
+y ante la flota aquea la junta disolvieron.\\
+El Pelida, a las tiendas y parejos bajeles\\
+se fué con Meneciades y sus amigos fieles.\\
+Y en tanto, al mar, Atrida, botó un barco ligero;\\
+eligió por su propia cuenta veinte remeros,\\
+cargó allá una hecatombe para el dios, y llevando\\
+a la linda Criseida, la embarcó con esmero.\\
+Y el ingenioso Ulises fué quien tomó el comando.\par
+Tras que así por la líquida ruta a bogar echaran,\\
+mandó Atrida a los pueblos que se purificaran,\\
+cual lo hicieron, lanzando toda inmundicia al mar.\\
+Luego a Apolo inmolaron en la playa, perfectas\\
+hecatombes de toros y de cabras selectas;\\
+y el olor iba al cielo con el humo al ondear.\par
+Agamenón, en tanto que esto hacía la gente,\\
+sin olvidar que a Aquiles en el agrio debate\\
+amenazó primero, dijo a sus diligentes\\
+heraldos y criados, Taltibio y Euribate:\par
+--A la tienda de Aquiles Peleyades id presto,\\
+y a la linda Briseida traedme de la mano;\\
+o he de ir allá en persona, si él no la da de plano,\\
+con más gente a sacársela, y peor le saldrá esto.\par
+Despachólos, vertiendo tan fieras expresiones;\\
+y ellos, el mar costeando, con ánimo indispuesto,\\
+llegaron a las tiendas y barcos mirmidones.\\
+Junto a su tienda y negro buque, sentado hallaron\\
+a Aquiles, quien, de verlos, no se alegró por cierto;\\
+y haciendo al rey la venia, con grave desconcierto,\\
+parados ante él nada dijéronle ni hablaron.\\
+Pero él entendió en su alma, y alzando así la voz,\\
+\dlgo{dijo:}{--Salud, heraldos, mensajeros de Dios}\\
+y de los hombres. Aproximaos sin cuidado,\\
+pues la culpa no es vuestra, sino de Agamenón,\\
+que en busca de la joven Briseida os ha mandado.\\
+Vamos, noble Patroclo, saca a disposición\\
+de ambos la joven que han de llevarse; y que testigos\\
+me sean los dos ante los dioses venturosos,\\
+y los hombres mortales, y ese rey rencoroso,\\
+si contra el vil desastre cuentan después conmigo.\\
+Pues aquél, poseído de furor, ya no sabe\\
+ni prever ni acordarse, para que así, al abrigo,\\
+combatan los aqueos con él junto a las naves.\par
+Dijo, y sacó Patroclo, dócil al caro amigo,\\
+de la tienda a la linda Briseida, y ya entregada,\\
+tornaron los heraldos, que siguió contrariada\\
+la mujer, la aquea flota. Rompiendo en llanto,\\
+Aquiles, de los suyos, lejos se apartó en tanto,\\
+y sentado a la orilla del espumoso mar,\\
+frente al Océano obscuro, con las manos tendidas,\\
+a su querida madre comenzó así a implorar:\par
+--Madre, ya que me diste tú a luz de corta vida,\\
+pudo Zeus, el olímpico altitonante, honrarme.\\
+Mas nada hizo, y el déspota Agamenón Atrida,\\
+me ha ultrajado, llegando del premio a despojarme.\par
+Así exclamó llorando. Lo oyó su augusta madre,\\
+que sentada se hallaba junto al anciano padre\\
+en el fondo marino, y al punto de la espuma\\
+se alzó como una niebla; y ante el lloroso hijo\\
+sentóse, acariciándolo con la mano, y le dijo:\par
+--Hijo, por qué llorabas? Qué pena tu alma abruma?\\
+Habla, y sepámoslo ambos. Nada oculte tu mente.\par
+Aquiles contestóle, suspirando hondamente:\\
+--Lo sabes. ¿A qué habría de hablar si sabes todo?\\
+A Tebas la sagrada ciudad de Eecion fuimos,\\
+y habiéndola saqueado, todo acá nos trajimos.\\
+Los aqueos partiéronlo de equitativo modo,\\
+y eligieron la linda Criseida para Atrida.\\
+Mas Crises, sacerdote de Apolo, fué en seguida\\
+a las veleras naves aqueas, aportando\\
+por rescate de su hija multa inmensa, y llevando\\
+en su mano las ínfulas del flechador Apolo\\
+a un cetro de oro atadas; con que imploró, no sólo\\
+a ambos Atridas, jefes de pueblos, sino a cada\\
+\dlgo{uno de los aqueos.}{Fué de éstos aclamado,}\\
+respeto al sacerdote, y el rescate aceptado.\\
+Mas no plugo al Atrida la idea así acordada,\\
+por lo cual, insultándolo, echó a aquél malamente.\\
+Fuése el viejo irritado, y Apolo oyó su ruego,\\
+que mucho lo quería; con que tiró inclemente\\
+saeta a los argivos, cuyos soldados luego\\
+morían a montones; pues las divinas flechas,\\
+por todo el grande ejército Aqueo hacían brechas.\\
+Díjonos los oráculos del Flechero un sapiente\\
+adivino, y consejo di yo inmediatamente\\
+de apaciguar al numen. Entonces el Atrida,\\
+encendiéndose en cólera, alzóse bruscamente,\\
+y me echó una amenaza que está, en verdad, cumplida.\\
+Pues ya los perspicaces dánaos a Crise enviaron\\
+junto con reales dones, en nave bogadora;\\
+mientras que mi tienda unos heraldos se llevaron\\
+a la hija de Briseo que aquéllos me otorgaron.\\
+Si a tu hijo auxiliar quieres, ve al Olimpo e implora\\
+a Zeus, que acaso un día su corazón tocaste\\
+con hechos o palabras; porque recuerdo ahora,\\
+que en el paterno alcázar mil veces te gloriaste\\
+de que sola entre todos los inmortales fueras\\
+quien al Kronión sombrío vergonzoso contraste\\
+supo evitar, cuando otros Olímpicos, con Hera\\
+y Poseidón, y Palas Atenea, qusieran\\
+encadenarlo. Pero tú, diosa, allí acudiste,\\
+desataste sus lazos, y al punto condujiste\\
+al vasto Olimpo el fiero centímano que llaman\\
+Briareo los dioses y Egeón los humanos.\\
+Más fuerte que su padre, fué, de su gloria ufano,\\
+a sentarse a la vera del Kronión; y medrosos\\
+de él, ya al otro no ataron los dioses venturosos.\\
+Recuérdaselo ahora, y llégate a él, y abrazando\\
+sus rodillas, consigue que a los troyanos dando\\
+su ayuda, ante la flota rechacen y destrocen\\
+estos a los aqueos, que así de su rey gocen.\\
+Y su error vea el déspota Agamenón Atrida,\\
+porque al principal de ellos no honró en forma cumplida.\par
+\dlgo{Respondióle llorando Tetis:}{--¿Por qué, hijo mío,}\\
+si te di a luz en hora fatal, te habré criado?\\
+Sin lágrimas ni pena debiste en los navíos\\
+quedar, ya que a tan próximo fin estás destinado.\\
+Y ahora eres corto en días y el más desventurado;\\
+que al ser en el palacio te di con hado impío.\\
+A hablar por ti al fulmíneo Zeus iré yo al nevado\\
+Olimpo, y quizá pueda persuadirlo. Y ahora,\\
+con los dánaos airado, gana tu bogadora\\
+flota, y no hagas más guerras. Hacia el Océano ayer\\
+partió Zeus a un banquete que dan los caballeros\\
+etíopes y todos los dioses con él fueron.\\
+Mas al Olimpo en doce días debe volver;\\
+y a su alcázar de bronce, yendo en tu nombre a hablarle,\\
+asiré sus rodillas y espero propiciarle.\par
+Dijo y partió, dejándolo con el alma enconada,\\
+por la elegante esposa que le fué arrebatada.\\
+Y mientras tanto Ulises a Crisa conducía\\
+la hecatombe sagrada. Tan luego que arribaron\\
+al puerto de hondas aguas, amainando guardaron\\
+las velas en el negro buque; y en la crujía,\\
+al mástil, prontamente, con cables abatieron.\\
+Bogaron a remo hasta la rada donde echaron\\
+anclas; y atando amarras, a la costa bajaron.\\
+sacaron la hecatomble para Apolo el flechero,\\
+y al fin salió Criseida del bajel marinero.\\
+El ingenioso Ulises condújola al altar,\\
+y entregándola al caro padre empezó así a hablar:\par
+--Oh Crises, el rey de hombres Agamenón me envía\\
+a que tu hija te traiga, y a que en ofrenda pía\\
+inmole yo a aquí a Febo la hecatombe sagrada\\
+en nombre de los dánaos, a ver si el dios se apiada,\\
+pues mandó a los argivos lamentable avería.\par
+Dijo, y su hija entrególe, que él recibió contento.\\
+Y al punto, en torno al ara de sólido cimiento,\\
+para el dios ordenaron la hecatombe sagrada.\\
+Laváronse las manos, tomaron la salada\\
+harina, y allá entonces, en alta voz orando,\\
+Crises rogó por ellos, las manos levantando:\par
+--Oyeme, dios del areo de plata, protector\\
+de Crisa y de la santa Kila, dominador\\
+de Ténedos: si un día mis ruegos escuchando\\
+me honraste, al pueblo aqueo cruelmente castigando,\\
+ahora como entonces, cúmpleme también este voto,\\
+y libra a los dánaos de la horrorosa peste.\par
+Dijo así, y fué de Apolo su oración escuchada.\\
+Luego que oran y esparcen ya la harina salada,\\
+mancornando a las víctimas, degüellan y desuellan.\\
+Cortan los muslos, cúbrenlos con un doble haz de pella\\
+y magras, y el anciano sobre la lecha hacheada\\
+quemólos, y con negro vino los fué rociando.\\
+En torno suyo había mancebos que empuñando\\
+asadores de cinco puntas, se dispusieron.\\
+Consumidos los muslos, las entrañas comieron;\\
+y ensartando en los pinchos lo restante, lo asaron\\
+con cuidado, por trozos; sacáronlo, y cumplida\\
+tal faena, el dispuesto banquete comenzaron\\
+sin que a nadie faltara su porción. En seguida\\
+que saciaron sed y hambre, los mancebos colmaron\\
+las cráteras de vino que después repartían,\\
+y a todos las primicias de la copa obsequiaron.\\
+Los jóvenes aqueos, tras de holgar todo el día,\\
+al dios se propiciaron cantándole un hermoso\\
+himno, que oyó el Flechero con ánimo gozoso.\par
+Cuando el sol se entró y vino la sombra, se acostaron\\
+junto al cable del buque; y al asomar temprana\\
+la Aurora rosodáctila, hija de la mañana,\\
+para el campo aqueo, mar afuera tomaron.\\
+Y el flechador Apolo buen viento les envía.\\
+Izando luego el mástil, las velas desplegaron,\\
+que en blanca combadura con el soplo se hincharon,\\
+mientras la honda purpúrea resonando batía\\
+la quilla del navío que su rumbo corría.\\
+Ya ante el gran campo aqueo, la nave a tierra halaron;\\
+y empinándola en grandes vigas sobre la arena,\\
+por los buques y tiendas luego se dispersaron.\par
+Junto a su flota en tanto, con su alma de ira llena,\\
+seguía el raudo Aquiles, noble hijo de Peleo;\\
+y de la ilustre junta y el combate alejado,\\
+el corazón ya le iba devorando el deseo\\
+\dlgo{de griterió y Guerra.}{Mas, cuando hubo llegado}\\
+la duodécima aurora, y al Olimpo volvieron\\
+los sempiternos dioses por Zeus encabezados,\\
+Tetis, que los encargos de su hijo no ha olvidado,\\
+emergiendo temprana de las olas del mar,\\
+y cruzando el gran cielo, fué en el Olimpo a hallar\\
+al vidente Krónida, que se hallaba sentado\\
+en el pico más alto del Olimpo escarpado.\\
+Fué, pues, y ante él sentándose, las rodillas le asió\\
+con la izquierda, y tomándole el mentón con la diestra,\\
+su ruego al soberano dios Kronión dirigió:\par
+--Padre Zeus, si he dado entre los inmortales muestra\\
+de serte útil con actos o palabras, te pido\\
+que oigas mi ruego y honres a mi hijo, el de más corta\\
+vida entre todos, porque de Agamenón soporta\\
+la ofensa que arrancándole su premio le ha inferido.\\
+Véngalo, pues, Olímpico Zeus próvido, acordando\\
+el triunfo a los troyanos, hasta que los aqueos\\
+cumplan con mi hijo y lo honren conforme a sus deseos.\par
+Dijo, mas Zeus nubígero, largo tiempo callando,\\
+nada respondió. Tetis, que abrazando seguía\\
+sus rodillas con fuerza, suplicó todavía:\par
+--Prométeme y con una señal veraz asiente,\\
+o niega, ya que a nadie temes; y así enterada,\\
+sabré si entre las diosas soy la más despreciada.\par
+El nubígero Zeus, suspirando hondamente,\\
+\dlgo{díjole:}{--Algo funesto se apronta, pues con Hera}\\
+me enconarás, cuando ella me provoque y zahiera.\\
+Ya entre los dioses ríñeme sin motivo, a pretexto\\
+de que yo en la pelea protejo a los troyanos.\\
+Pero vete y apártate, no te advierta Hera; y a esto,\\
+para que bien se cumpla, déjalo ya en mis manos.\\
+Te haré con la cabeza la seña en que confías.\\
+Entre los inmortales no hay mayor garantía.\\
+Que irrevocable y cierto, de cumplirse no deja\\
+lo que con la cabeza ratifiqué a fe mía.\par
+Dijo el Kronión. Al signo de las azules cejas,\\
+ondeó el fragante pelo del rey en la inmortal\\
+cabeza, y el Olimpo retembló colosal.\par
+Dicho aquello, apartáronse. Regresó ella a su centro,\\
+al hondo mar saltando del Olimpo esplendente,\\
+y Zeus a su palacio. Los dioses juntamente\\
+ante su padre alzáronse, saliéndole al encuentro.\\
+Sentóse él en su trono; mas Hera que con tino\\
+había visto cómo con él deliberó\\
+Tetis pies de plata, hija del anciano marino,\\
+al dios Kronión hirientes palabras dirigió:\par
+--¿Cuál de los dioses, pérfido, contigo a conversado?\\
+Siempre tramar secretos sin mí, te causa agrado;\\
+mas, de lo que meditas, nunca amable me enteras.\par
+\dlgo{Contestó el padre de hombres y dioses:}{--En vano, Hera,}\\
+pretendes de tal modo saber todas mis cosas,\\
+porque arduas te saldrían aunque seas mi esposa.\\
+Lo que es de oírse, ni hombre ni dios sabrá primero;\\
+mas todo cuanto sin los dioses resolver quiero,\\
+\dlgo{No indagues ni preguntes.}{Respondió la augusta Hera}\\
+\dlgo{de ojos de buey:}{--¡Terrible Kronida, qué dijiste!}\\
+Poco indago o pregunto, puesto que deliberas\\
+muy tranquilo tus cosas. Mas tengo el alma triste\\
+de recelar que acaso te sedujo con tino\\
+Tetis pies dep plata, hija del anciano marino.\\
+Temprano vino a asirte las rodillas, y creo\\
+que para honrar a Aquiles le acordaste, de fijo,\\
+perder a muchos ante los bajeles aqueos.\par
+El nubígero Zeus, respondiéndole dijo:\\
+--Desgraciada! Sospechas siempre lo que no oculto.\\
+Así obtendrás tan sólo quedar más alejada\\
+de mi afecto, y con ello sufrir mayor insulto.\\
+Si es verdad lo que dices, será porque me agrada.\\
+Pero, acata mis órdenes y siéntate callada.\\
+Teme que ni los dioses del Olimpi, a ti amables,\\
+te valgan si en ti pongo mis manos formidables.\par
+Dijo así. La augusta Hera de ojos de buey, temiendo,\\
+fué a sentarse callada, su furor reprimiendo.\\
+Y gimieron los célicos dioses en la morada\\
+de Zeus. Mas ya el artífice Hefesto los arenga\\
+mimando a Hera de blancos brazos, su madre amada:\par
+--Temo que algo insufrible y aciago sobrevenga,\\
+si así por los mortales reñís, alborotando\\
+a los dioses, porque hasta se nos irá amargando\\
+el placer de las fiestas. Yo aconsejo a mi madre,\\
+aun cuando es tan prudente, mime a Zeus, caro padre;\\
+con que así él nuestras fiestas no turbe rencilloso.\\
+Pues si viene al Olímpico fulminador la idea,\\
+puede echarnos abajo, siendo el más poderoso.\\
+Hazle en dulces palabras halago cariñoso,\\
+a fin de que el Olímpico favorable nos sea.\par
+Habló así; y dirigiéndose a su madre querida,\\
+puso en sus manos una doble copa y le dijo:\\
+--Sufre todo, madre, aunque sea cruel tu quebranto.\\
+No te vea golpeada yo, queriéndote tanto;\\
+y por más que en su furia nada te valga tu hijo,\\
+pues arduo es al Olímpico resistir. Ya una vez\\
+que intenté socorrerte, me asió de un pie y después\\
+desde el umbral divino me arrojó. Todo el día\\
+rodé, cayendo en Lemnos cuando el sol se ponía.\\
+Débil soplo quedábame de vida postrimera,\\
+y los sintios salváronme del golpe prontamente.\par
+Así dijo, y la diosa de blancos brazos, Hera,\\
+la copa de su mano recibió sonriente.\\
+Luego él, por la derecha sirvió a los otros dioses,\\
+sacando de una crátera el dulce néctar. A esto,\\
+de los felices númenes inextinguibles alzóse\\
+la risa en el palacio, viendo afanarse a Hefesto\par
+Hasta que el sol se puso, todo el día gozaron\\
+del festín, sin que nadie justa porción faltara,\\
+ni la ira magnífica de Apolo, ni la clara\\
+voz con que allá las musas alternando cantaron.\par
+Mas, luego de apagada la solar refulgencia,\\
+ganaron las mansiones que a cada uno había hecho\\
+Hefesto el cojo ilustre con ingeniosa ciencia.\\
+Zeus, el fulmíneo Olímpico, fué a buscar en su lecho\\
+la calma y dulce sueño que hallaba satisfecho.\\
+Habiendo allá subido, durmióse; y a su vera,\\
+reposaba acostada la crisótrona Hera.
+\pend
+\endnumbering
+\newpage
+%
+\section*{\centering\textbf{\textsc{Canto} 2}\footnote{\neh, pp. 92-93.}}
+\addcontentsline{toc}{subsection}{\textsc{Canto 2}}
+%
+\noindent-- -- -- -- -- --\par
+%
+\beginnumbering
+\pstart
+\setline{474}Tal como los cabreros distinguen fácilmente\\
+las copiosas majadas, si en el pasto se mezclan,\\
+así les dan los jefes el orden conveniente\\
+para el combate. Entre ellos va el rey Agamenón,\\
+parecido por ojos y testa al dios tonante;\\
+por el talle a Ares y por el pecho a Poseidón.\\
+Cual la mayor cabeza del hato es el pujante\\
+toro que entre las vacas sobresale, aquel día\\
+dispuso Zeus que Atrida fuera el más arrogante\\
+de porte entre los muchos héroes que allí había.\par
+\pend
+\endnumbering
+%
+\noindent-- -- -- -- -- --\par
+%
+\newpage
+%
+\section*{\centering\textbf{\textsc{Canto} 3}\footnote{\ehuno, pp. 44-(?); \ehdos, p. 81.}}
+\addcontentsline{toc}{subsection}{\textsc{Canto 3}}
+%
+\noindent-- -- -- -- -- --\par
+%
+\beginnumbering
+\pstart
+\firstlinenum{25}
+\setline{21}
+Y el marcial Menelao, cuando lo vé que al frente\\
+de las tropas, avanza con andar imponente,\\
+se alegra como hambriento león que hace gran presa\\
+de un enastado ciervo o una cabra montesa,\\
+y ávido los devora, ni aunque esté perseguido\\
+por los ágiles perros y los mozos fornidos.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{125}
+Hallóla en el palacio tejiendo una amplia y bella\\
+tela doble de púrpura en que historiaba entonces,\\
+las mil luchas que a influjo de Ares sufren por ella\\
+domadores troyanos y aqueos que arma el bronce.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{136}
+El marcial Menelao y Alejandro, al instante,\\
+por ti van a batirse con sus enormes lanzas,\\
+y tú serás la esposa del que salga triunfante.\\
+Diciendo así la diosa, con dulces esperanzas\\
+de su primer marido, patria y deudos, la arroba.\\
+Y al punto, envuelta en cándidos velos, deja la alcoba,\\
+vertiendo tierno llanto...\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{154}
+Al ver Helena hacia ellos marchaba, con voz queda\\
+y en aladas palabras dijeron: --Justo es para\\
+los troyanos y aqueos padecer tantos males\\
+por tal mujer; pues a las diosas inmortales,\\
+ella, terriblemente, se parece de cara.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{164}
+Tú no eres la culpable, sino los dioses, de esta\\
+guerra de los aqueos, de plorable y funesta.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{173}
+Dulce me habría sido la peor muerte, cuando\\
+por seguir aquí a tu hijo, dejé el tálamo amable,\\
+hermanos, dulce hija y amigas adorables.\\
+Y de que así no fuera, consúmome llorando.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{178}
+Es el poderosísimo Agamenón Atrida,\\
+a la vez tan cumplido rey como buen guerrero:\\
+cuñado de esta perra, por mi honra inmerecida.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{241}
+\firstlinenum{242}
+¿O no querrán, acaso, concurrir al combate,\\
+corridos del oprobio que sobre mí se abate?\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{320}
+\firstlinenum{320}
+Zeus padre que en el Ida reinas glorioso y grande:\\
+haz que quien puso entre ambos pueblos el desconcierto,\\
+descienda al fondo de la morada de Hades, muerto;\\
+y que amistad, en cambio, tu alianza fiel nos mande.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{428}
+Huiste de la guerra donde habría debido\\
+inmolarte aquel héroe que antes fué mi marido.\\
+A Menelao, amado de Ares, te lisonjeabas\\
+de exceder en corage, brazo y lanza. Anda ahora\\
+y rétalo de nuevo, como cuando peleabas...\\
+Mas, nó, que disuadirte querría, previsora,\\
+para que locamente no afrontes la pujanza\\
+del blondo Menelao; no sea que éste al punto,\\
+en la contienda bélica te rinda por la lanza.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{438}``Mujer, no me zahieras así. Si venció ahora\\
+Menelao, con ayuda de Atena, vendrá mi hora;\\
+porque también hay dioses que a nosotros nos guían.\\
+Ea, pues, acostémonos y a querernos volvamos,\\
+pues nunca embargó tanto tu amor el alma mía,\\
+ni cuando de la amena Lacedemonia un día\\
+te rapté, y en las naves, pasando el mar, bogamos,\\
+y afecto y lecho uniéronnos en la lista de Kranae.\\
+Así te amo y el ducle deseo a ti me atrae.\\
+Tal dijo, y fuese al lecho, seguido de la esposa,\\
+y ambos allá acostáronse en la cama lujosa´´.
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\endnumbering
+\newpage
+%
+\section*{\centering\textbf{\textsc{Canto} 4}\footnote{\ehdos, pp. 106-107.}}
+\addcontentsline{toc}{subsection}{\textsc{Canto 4}}
+%
+\noindent-- -- -- -- -- --\par
+%
+\beginnumbering
+\pstart
+\firstlinenum{105}
+\setline{104}Dice Atena y persuádelo; con que, al punto, el menguado,\\
+toma el pulido arco sacado de un lascivo\\
+cabrón montés, que un día cazara él emboscado,\\
+hiriéndolo en el pecho con su tiro furtivo\\
+al saltar de una roca donde quedó tumbado.\\
+Sus cuernos que medían dieciseis palmos, fueron\\
+labrados y ajustados por el maestro armero\\
+que con remates de oro dejó el arco acabado.\\
+Fíjalo él bien en tierra, lo tiende, y al instante\\
+sus compañeros pónenle los escudos delante;\\
+no acometa la brava gente aquea y le impida\\
+herir a Menelao, marcial vástago Atrida.\\
+Destapando él la aljaba, saca una nueva y pronta\\
+saeta, mensajera del negro dolor; monta\\
+en el nervio la amarga flecha, y una cumplida\\
+hecatombe de blancos, primiciales corderos\\
+prometiéndole a Apolo Licio, el ilustre arquero,\\
+cuando vuelva en la sacra Zelea a ver su hogar--\\
+tira juntos la muesca y el nervio, hasta acercar\\
+la cuerda a su tetilla y el fierro a la otra parte\\
+del corvo ingenio; y cuando lo acaba así de armar,\\
+silba el arco, la cuerda brama, y aguda parte\\
+la flecha hacia las filas, ávida de volar.\par
+\pend
+\endnumbering
+%
+\noindent-- -- -- -- -- --\par
+%
+\newpage
+%
+\section*{\centering\textbf{\textsc{Canto} 5}\footnote{\ehdos, pp. 54-70.}}
+\addcontentsline{toc}{subsection}{\textsc{Canto 5}}
+%
+\beginnumbering
+\pstart
+\firstlinenum{5}
+Palas Atena, entonces, dió audacia y entereza\\
+a Diomedes Tideides, para que alta proeza\\
+destacara entre todos los argivos su fama.\\
+Le encendió escudo y yelmo con incansable llama,\\
+tal como la del astro de Otoño, que lavado\\
+por el Océano emerge más que todos brillante:\\
+así el fuego en sus hombros y cabeza ha brotado,\\
+cuando lo echa en lo recio del tumulto, adelante.\par
+Había en Troya un cierto Dares, rico y honrado,\\
+sacerdote de Hefesto, cuyos dos hijos, que eran\\
+Ideo y Fegeo, aptos para todo combate,\\
+separados del resto, contra el héroe se abaten\\
+montando un carro, mientras él a pie los espera.\\
+Fegeo, al encontrarse , tiró primeramente\\
+su venablo de larga sombra que inútilmente\\
+por sobre el hombro izquierdo del Tideida pasó.\\
+Pero éste con segura mano le arrojó el bronce\\
+que en la mitad del pecho fué a clavársele entonces,\\
+tumbándolo del carro, pues no en vano partió.\\
+Corrió Ideo, el hermoso vehículo dejando,\\
+sin defender el cuerpo del hermano caído.\\
+Que él mismo de la negra muerte no hubiera huído,\\
+si en tinieblas Hefesto no lo envuelve, evitando\\
+con salvarlo, que el viejo quede más afligido,\\
+y el hijo de Tideo tomó y dió los corceles\\
+a los suyos, haciéndolos llevar a los bajeles.\\
+Al notar los troyanos que huye un hijo de Dares\\
+y que el otro ante el carro muerto quedó, se apena\\
+su corazón magnánimo; y la ojizarca Atena\\
+así dijo, domándole la mano, al furioso Ares:\par
+--Ares, Ares, funesto, destructor, sitiador:\\
+¿no es mejor que dejemos que aqueos y troyanos\\
+luchen, y que la gloria les dé Zeus soberano,\\
+mientras así eludimos su divino rencor?\par
+Tal dijo, y del combate sacando a Ares furioso,\\
+lo hizo sentar a orillas del Escamandro herboso.\\
+Los dánaos pusieron en fuga a los troyanos,\\
+y cada jefe, entonces, mató un hombre a sus manos.\\
+Agamenón, rey de hombres, va primero y derriba\\
+del carro al grande Odíon, rey de los halizones,\\
+que dió la espalda, hundiéndole su lanza desde arriba,\\
+y el pecho atravesándole por entre los pulmones.\\
+Tal cayó, y con estrépito sus armas resonaron.\par
+Mató allá Idomeneo, por la lanza preclaro,\\
+a Festo, hijo de Boro el meonio, que había\\
+llegado de la fértil Tarne, hundiendo la enorme\\
+asta en su hombro derecho, cuando al carro subía.\\
+Cayó así; horribles sombras entonces lo rodearon,\\
+y los hombres de Idomeneo lo despojaron.\par
+Menelao el Atrida mató a Escamandrio, experto\\
+cazador, que de Estrofio fué hijo, con su asta de haya.\\
+La propia Artemis era quien le enseñó el acierto\\
+en cazar cuantas fieras en bosques y cerros haya.\\
+Mas de nada valiéronle ni artemis la flechera,\\
+ni su celebrado arte de tirar al acecho,\\
+pues el ilustre Atrida que huyendo ante él lo viera,\\
+lo lanceó entre los hombros, traspasándole el pecho.\\
+Y así, al caer de bruces, sus armas resonaron.\\
+--Merión mató a Fereclón, hijo de Harmón maestro\\
+que fuera en toda clase de artes manuales diestro,\\
+pues Palas Atenea le daba su alto amparo.\\
+Fué él quien hizo a Alejandro los navíos veloces\\
+que tanto mal a Troya y a él mismo ocasionaron,\\
+por no haber entendido su oráculo a los dioses.\\
+Merión al alcanzarlo, pues sin cesar lo hostiga,\\
+por la nalga derecha le envasó el bronce fuerte;\\
+y como el hueso hendiérale, tocando la vejiga,\\
+gimió al caer de hinojos y lo envolvió la muerte.\par
+Meges mató a Pedeo, bastardo de Antenor,\\
+a quien como hijo propio la divina Teano,\\
+por ser grata a su esposo, criara con amor.\\
+El ilustre Fileides que a él se hallaba cercano,\\
+fué y le clavó en la nuca su aguda lanza entonces,\\
+y la lengua cortándole, le atravesó los dientes:\\
+que así rodó por tierra, mordiendo el frío bronce.\par
+Eurípilo Evemónides da al divino Hipsenor\\
+hijo de Dolopión el Grande, que oficiaba\\
+el culdo de Escamandro, y a quien el pueblo honraba\\
+como a un dios, fiero tajo cuando huye con pavor.\\
+La espada, junto al hombro, tronchó el brazo pesado,\\
+y rodó por los suelos el miembro ensangrentado.\\
+Y cerraron los ojos de aquél en la cruenta\\
+lid, la muerte purúrea y la Parca violenta.\par
+Y mientras así agítalos el combate empeñoso,\\
+no se sabe si el hijo de Tideo, en su brío,\\
+combate con troyanos o aqueos, tan furioso\\
+lánzase a la llanura cual rebalsado río\\
+que durante el deshielo va arrollando bravío\\
+los diques y los setos de los campos feraces,\\
+y al crecer con las lluvias de Zeus, en su desvío,\\
+muchas bellas labranzas de los mozos deshace:\\
+tal las densas falanges troyanas descompone\\
+Tideides, y entre tantos, ninguno se le opone.\\
+Cuando, en eso, el caro hijo de Licaón, que advierte\\
+que en la tropa del llano siembra, feroz, la muerte,\\
+tiende el corvo arco y clávale en la espalda derecha,\\
+por el hueco de la honda coraza, amarga flecha\\
+que ensagrentando el bronce, del otro lado asoma.\\
+Y el claro Licaónida grita con voz terrible:\par
+--¡Cargad, bravos troyanos, hábiles en la doma!\\
+Herido está el aqueo más bravo, y no es posible\\
+que el grave tiro aguante, si con suerte propicia\\
+me endilgó acá el rey, vástago de Zeus, desde la Licia.\par
+Tal se alaba, aunque al otro no rindió el arma aguda;\\
+pues ante yunta y carro reculó con pericia,\\
+pidiendo a Esténelo, hijo de Capaneo ayuda:\par
+--¡Corre, buen Capaneides, deja el carro, y prolijo\\
+\dlgo{arráncame del hombro la amarga flecha!}{Dijo,}\\
+y al punto apeóse Esténelo del carro, y la enemiga\\
+flechada clavada al hombro le arrancó; y desbordando,\\
+saltó la sangre por las mallas de la loriga.\\
+Y así fue el buen guerrero Diomedes implorando:\par
+--Escúchame hija indómita de Zeus potente: si\\
+tu amparo en la ardua lucha nos diste siempre a mí\\
+y a mi padre, ahora haciéndome la gracia, oh Atenea,\\
+de que mate yo a ese hombre, ponlo a tiro de lanza;\\
+pues porque me hirió, alábase con la loca esperanza\\
+de que yo, pronto, el caro fulgor del sol no vea.\par
+Así rogó y fué oído por Palas Atenea,\\
+qe aligerando al punto su cuerpo, pies y manos,\\
+con aladas palabras lo animó a la pelea:\par
+--Recóbrate, Diomedes, y ataca a los troyanos,\\
+que ya infundí en tu pecho la audacia y el vigor\\
+de tu intrépido padre Tideo el domador,\\
+hábil en el escudo; y aun torné caediza\\
+la nube de ceguera que tapaba tus ojos,\\
+para que a dioses y hombres conozcas en la liza,\\
+y si un numen te prueba, no afrontes sus enojos.\\
+Sólo entre Afrodita, la hija de Zeus, entonces\\
+hiérela sin escrúpulo con el agudo bronce.\par
+Dicho esto, fuése Atene la ojizarca; y al frente\\
+de combate, Tideides se incorporó sin falta,\\
+pues contra los troyanos, más aún que anteriormente,\\
+triplicósele el brío, como al león que asalta\\
+un establo de ovejas, donde lo ha lastimado\\
+el pastor sin rendirlo, con que su furia exalta.\\
+Húyese el hombre, entonces, al fondo del cercado;\\
+y mientras indefenso y en su terror febril\\
+con revuelto atropello se amontona el ganado,\\
+la ávida fiera salta del profundo redil.\\
+Así el fuerte Diomedes, en furia arrebatado,\\
+las falanges troyanas revuelve y desbarata.\par
+Allá a Astino y a Hipéiron, pastor de pueblos, mata,\\
+clavando a éste la pica de bronce en la tetilla,\\
+mientras con la ancha espada troncha al otro la istilla,\\
+y de la espalda y cuello todo el hombro separa.\\
+Déjalos allá y cierra contra Abante y Polido\\
+a los que un viejo intérprete de sueños engendrara:\\
+Eurídamas, que al verlos partir no habrá entendido\\
+los suyos, pues Diomedes a ambos mata y despoja.\\
+Acto continuo contra Janto y Toón se arroja,\\
+hijos que pudo Fénope en su vejez lograr,\\
+pues ya caduco y triste, no engendró otro heredero.\\
+Al quitarles la amable vida, en llanto y pesar\\
+sumió al padre, que vivos no ha de verlos tornar:\\
+con los que otros parientes la herencia se repartieron.\par
+Luego en un carro toma dos héroes que hijos fueron\\
+de Príamo Dardánida: Cromíon y Equemón.\\
+Cual desnuca, asaltando la boyada, el león,\\
+a un buey o una ternera que en el bosque pacía,\\
+Tideidos lo desmonta por la fuerza, con impía\\
+saña, pilla sus armas, y entrega los corceles\\
+a los suyos, haciéndolos llevar a los bajeles.\par
+Mas, cuando destrozaba las filas, viólo Eneas,\\
+y por entre el tumulto de armas de la pelea\\
+fué en busca del divino Pándaro. Así que halló\\
+al eximio y bravo hijo de Licáon, lo encaró\\
+\dlgo{para decirle:}{--Pándaro, ¿qué es de tu arco y aladas}\\
+flecha, y de tu fama por nadie disputada\\
+aquí ni en Licia, donde ninguno se gloría\\
+de aventajarte? ¡Vamos! levanta a Zeus tus manos,\\
+y tira contra ese hombre, que haciendo a los troyanos\\
+innumerables males, triunfa con saña impía,\\
+y así a tanto valiente las rodillas afloja;\\
+si no es algún dios que hacia los de Troya indispuso\\
+un sacrilegio, porque malo es si un dios se enoja.\par
+Entonces el claro hijo de Licáon le repuso:\\
+--Eneas que a los nobles troyanos aconsejas,\\
+en todo al bélico hijo de Tideo semeja.\\
+Su escudo, su oculario triple casco ver creo,\\
+y sus corceles, aunque puede que sea un dios;\\
+mas, si es el bélico hijo del ilustre Tideo,\\
+su furia está probando que un inmortal va en pos,\\
+envuelto en una nube, y apartando la aguda\\
+flecha que lo amenaza; pues ya una le tiré,\\
+y por el hueco de la coraza le acerté\\
+a la espalda derecha, creyendo que sin duda\\
+al Hades lo echaría, pero no lo maté:\\
+con que, seguramente, será un dios irritado.\\
+Ni caballos ni carro tengo aquí qué montar,\\
+aun cuando en el palacio de Licáon han quedado\\
+once hermosos y sólidos coches sin estrenar,\\
+con los toldos dispuestos, y cada uno a su lado\\
+la yunta que cebada blanca y avena come.\\
+El anciano guerrero Licáon prescribióme\\
+al dejar yo el palacio, con premiosa insistencia,\\
+que a los troyanos sólo desde el carro mandara\\
+en la ardua lucha, pero no le presté aquiesencia.\\
+Cuánto más me valiera, pues dejé por prudencia\\
+los caballos, temiendo que el pasto les faltara\\
+con reunión tan grande, y estando acostumbrados\\
+a comer bien; sin ellos, a pie a Ilión he venido,\\
+confiado sólo en mi arco, que nada útil me ha sido;\\
+pues ya contra dos jefes, Tideides y un Atrida\\
+he tirado, y aunque a ambos sangré con grave herida,\\
+sólo excitarlos pude. Con mal sino partí\\
+el día en que el corvo arco del clavo desprendí\\
+y a la amena Ilión traje mis troyanos, por ser\\
+amable al divino Héctor. Mas, como vuelva a ver\\
+a mi patria, a mi esposa y a mi alta fortaleza,\\
+que un guerrero enemigo me corte la cabeza,\\
+si este arco no destrozo y echo al fuego violento,\\
+ya que su compañía me es vana comp el viento.\par
+Mas, replicóle el jefe de troyanos, Eneas:\\
+--No hables así, pues nada cambiará, si nosotros\\
+no vamos contra ese hombre con armas, carro y potros\\
+a pelearlo. ¡Ea! al mío sube, para que veas\\
+cómo saben lo mismo los corceles troyanos\\
+perseguir o escaparse rápido por los llanos,\\
+y cómo han de llevarnos salvos a la ciudad,\\
+si otra vez Zeus concede gloria, en su potestad,\\
+a Diomedes Tideides. Toma, pues, ya, a mi lado,\\
+fusta y brillantes riendas; yo pelearé montado,\\
+o hazlo tú, y los caballos a mi cuidado sean.\par
+\dlgo{Y contestó el claro hijo de Licaón:}{--Eneas,}\\
+encárgate tú mismo de la yunta y las bridas;\\
+pues hallándose bajo su habitual conductor,\\
+si el hijo de Tideo nos forzara a la huída,\\
+tirará aquélla el cóncavo carro mucho mejor;\\
+no se asuste y desboque, tu voz desconociendo,\\
+y a sacarnos se niegue de la lucha, y cayendo\\
+sobre ambos el bravo hijo de Tideo, nos mate\\
+y se lleve los fuertes potros. Así, al combate\\
+conduce por tu propia mano tu carro y yunta,\\
+mientras su ataque espero con mi lanza de punta.\par
+Hablando así, al labrado carro suben, y ansiosos,\\
+contra Tideides lanzan los corceles briosos.\\
+Mas Esténelo, el célebre hijo de Capaneo,\\
+que los advierte, dícele con palabras aladas:\par
+--Carísimo Diomedes Tideides, venir veo\\
+dos robustos varones, con ardiente deseo\\
+de pelearte, y que tienen fuerzas desmesuradas:\\
+Pándaro el diestro arquero, quien se jacta de que es\\
+Vástago de Licáon, y Eneas, que a su vez\\
+se alaba de que Anquises, varón irreprochable,\\
+lo engendró en Afrodita. Retirémonos, pues,\\
+montados; no te expongas, furioso, a algún revés,\\
+si en la vanguardia arriesgas perder la vida amable.\par
+Mas el fuerte Diomedes, mirándolo de abajo,\\
+\dlgo{contestó:}{--No me digas que huya o te des trabajo}\\
+de convencerme en vano, pues no soy del linaje\\
+de los que en retirada, temerosos pelean.\\
+Iré a ellos desmontado, que aun me sobra coraje,\\
+firme con el apoyo de Palas Atenea.\\
+No han de llevarlos lejos de acá, si retroceden,\\
+sus veloces caballos, y alguno escapar puede.\\
+Mas, te diré algo, y guárdalo fielmente en tu memoria:\\
+si la sapiente Atena me concede la gloria\\
+de matarlos, tú nuestros rápidos troncos ata\\
+al barandal, ciñéndoles las riendas, y arrebata\\
+lejos de los troyanos los corceles de Eneas,\\
+que pondrás al amparo de las tropas aqueas;\\
+pues su raza es la de esos que a Tros dió en expiación\\
+por Ganimedes, su hijo, Zeus el clarividente.\\
+Nada hay, bajo la aurora y el sol, más excelente.\\
+El rey de hombres Anquises, burló a Laomedón\\
+y sacó cría, echándoles yeguas ocultamente.\\
+Naciéronle seis de ese linaje en su mansión:\\
+cuatro crió a pesebre, y a Eneas hizo don\\
+de los otros dos, que ahora sembrar el terror vemos.\\
+Con que, si los tomamos, un buen triunfo obtendremos.\par
+Así éstos conversaban, mientras que los dos otros\\
+caían ya sobre ellos con sus veloces potros.\\
+Y este reto el claro hijo de Licáon les echa:\par
+--¡Corajudo y noble hijo del ilustre Tideo,\\
+pues no llegó a postrarte la amarga y rauda flecha,\\
+veremos si la lanza responde a mi deseo!\par
+Dice, y cimbrando tira su asta de larga sombra,\\
+y el broquel del Tideida con el bote atraviesa,\\
+rozando la coraza, y así a jactarse empieza:\par
+--¡Atravesado tienes el vientre, y no me asombra\\
+que pronto acabes, dándome considerable fama!\par
+Pero el fuerte Diomedes, sin conmoverse, exclama:\\
+--¡Erraste y falló el tiro! Mas creo por mi parte\\
+que no lograréis tregua, como uno de ambos no harte\\
+de sangre al bélico Ares, rodando por la arena.\par
+Dice y tírale; el dardo, guiado por Atena,\\
+entre ojo y nariz clávasele, sus blancos dientes pasa,\\
+y el incansable bronce la lengua le cercena\\
+de raíz, y su punta bajo el mentón rebasa.\\
+Así cayó del carro; resonaron sobre él\\
+sus magníficas armas, se abrieron sus corceles,\\
+y allá lo abandonaron su fuerza y su alma fiel.\par
+Eneas salta al suelo con su lanzón y escudo,\\
+y temiendo que el cuerpo le quiten los aqueos,\\
+ronda en torno, confiado como un león forzudo,\\
+prontos broquel y pica, con ardientes deseos\\
+de matar al que ataque, mientras grita sañudo.\\
+Tideides alza entonces una piedra imponente\\
+que dos hombres de ahora levantar no podrían,\\
+mientras con una mano la lleva él fácilmente.\\
+Con ella hiere a Eneas donde el fémur encaja\\
+con la cadera, punto que se llama \emph{cotylo};\\
+rómpele ambos tendones y el \emph{cotylo} descuaja,\\
+y el cutis le desgarra la piedra con su filo.\\
+El héroe, de rodillas cae, apoyando en tierra\\
+su fuerte mano, y negra noche sus ojos cierra.\par
+Y allá Eneas, rey de hombres, habría perecido,\\
+si acaso Afrodita, hija de Zeus, que lo tuviera\\
+de Anquises al boyero, pronto no lo advirtiera.\\
+Con que, sus blancos brazos tiende al hijo querido,\\
+y en un doblez del mando brillante lo resguarda,\\
+no sea que los dánaos bien montados le claven\\
+el cruel bronce en el pecho, y así su vida acaben.\par
+Y mientras del combate lo substrae, no tarda\\
+en efectuar Esténelo lo que convino, al mando\\
+del cumplido guerrero Diomedes. Apartando\\
+la yunta del tumulto, sus bridas ciñe al tope\\
+del barandal, y leos de los troyanos lleva\\
+los lucientes caballos de Eneas, al galope,\\
+rumbo hacia los aqueos de las hermosas grebas\\
+los da a Deipilo (amigo que entre todos honraba,\\
+por lo bien que su juicio con el suyo acordaba)\\
+a fin de que a los buques los conduzca; y montando\\
+su yunta otra vez, coge más bien labradas riendas,\\
+y solícito anímala, a Tideides buscando.\\
+Este acosa a Ciprina con sus armas tremendas,\\
+sabiéndola una débil diosa entre las deidades,\\
+no de esas que a los hombres guían en las contiendas,\\
+como Atena o Enío que arrasa las ciudades.\\
+Y así que en la refriega tumultuosa la alcanza,\\
+el hijo de Tideo cala su aguda lanza\\
+y con ella atacándola, rompe el mando divino,\\
+propia obra de las Gracias, y herir el cutis fino\\
+de la mano, al extremo del dorso palmar, osa.\\
+Brota entonces la sangre divina de la diosa,\\
+o mejor dicho el ícor, flúido peregrino\\
+que los dioses dichosos en vez de ella derraman,\\
+porque ni trigo comen, ni beben negro vino:\\
+(con lo que, siendo exangües, inmortales los llaman).\\
+Lanza ella agudo grito, dejando a su hijo solo;\\
+y mientras lo alza en una nube azul Febo Apolo,\\
+no sea que los dánaos bien montados le claven\\
+el cruel bronce en el pecho, y así su vida acaben,\\
+increpa el buen guerrero Diomedes a la diosa:\par
+--¡Hija de Zeus, apártate de la acción belicosa!\\
+¡Basta ya con que engañes a débiles mujeres!\\
+Pues creo que si en otra guerra mezclarte quieres,\\
+hasta su mismo nombre te alejará medrosa.\par
+Dijo, y ella apartóse cruelmente torturada.\\
+La rauda Iris sacóla del tumulto, abrumada,\\
+negreándole ya el lindo cutis. Pronto halló al fiero\\
+Ares, que hacia la izquierda del combate sentado,\\
+contra una nube había su lanzón arrimado,\\
+lo propio que la yunta de caballos ligeros.\\
+Y ante el querido hermano se arrodilló, abatida,\\
+instándole a prestarle los potros de áurea brida:\par
+--Querido hermano, apiádate de mi y préstame ahora,\\
+para ir al Olimpo en que los inmortales moran,\\
+tus caballos; pues sufro mucho de hallarme herida\\
+por un varón, Tideides, quien con Dios padre fuera\\
+\dlgo{capaz de Pelear.}{Díjole así, y Ares le ha dado}\\
+los potros de áurea brida, con que el carro ha montado,\\
+gimiendo de congoja. Subió Iris a su vera,\\
+y picó, rienda en mano, la yunta voladora.\\
+Pronto al Olimpo fueron, donde los dioses moran;\\
+y la diligente Iris, los potros sujetando,\\
+los desató y echóles por pasto la ambrosía.\par
+La divina Afrodita, mientras tanto, caía\\
+al regazo de Dione su madre, que tomando\\
+en los brazos a su hija, la acarició y le dijo:\par
+--¿Qué uraniano, hija amada, te hizo esta iniquidad,\\
+como si procedieras con notoria maldad?\par
+\dlgo{La risueña Afrodita respondióle:}{--Fué el hijo}\\
+de Tideo, el soberbio Diomedes, quien me hirió,\\
+porque a Eneas, que es mi hijo más caro, saqué yo\\
+del combate. Pues ahora ya no son entre iguales,\\
+aqueos y troyanos, las luchas más furiosas;\\
+que los dánaos atacan hasta a los inmortales.\par
+Y le contestó Dione, divina entre las diosas:\par
+--Soporta, hija, tus penas, que muchos moradores\\
+del Olimpo, debimos sufrir tormento agudo\\
+de los hombres, mezclándonos así con sus rencores.\\
+Los pasó Ares, cuando Oto y Efialtes el forzudo,\\
+hijos de Alo, apresáronlo con formidable nudo,\\
+por trece meses dentro de un cántaro de bronce.\\
+Y muriera allá el bélico Ares, si Eríbea, entonces,\\
+bellísima madrastra de aquéllos, no lo advierte\\
+a Hermes, quien substrajo a Ares del lazo rudo y fuerte\\
+que lo postraba exánime. Hera los padeció,\\
+cuando el vigoroso hijo de Anfitrión le clavó\\
+en el seno derecho saeta trifurcada,\\
+en tormento incurable dejándola angustiada.\\
+Y sufrió el enorme Hades la fecha audaz de aquel\\
+mismo hombre, hijo de Zeus Portaégida, cuando ante\\
+la puerta de los muertos le infligió herida cruel.\\
+De dolor traspasado, y el corazón penante,\\
+pues abatía su ánimo la saeta enterrada\\
+en su espalda robusta, fué al Olimpo, morada\\
+de Zeus, donde aplicándole Peón drogas calmantes,\\
+lo curó, pues no había nada en él de mortal.\\
+¡Bárbaro y temerario quien con impiedad tal,\\
+por el arco a los dioses del Olimpo abatió!\\
+Así Atena, la zarca diosa, contra tí alzó\\
+al hijo de Tideides, quien, insensato, ignora\\
+que todo el que a los dioses combate en mala hora,\\
+no alcanza larga vida, ni logra que ocupando\\
+sus rodillas los hijos, le llamen padre, cuando\\
+vuelve de los combates y la feroz pelea.\\
+Piense Tideides, aunque se tenga por tan fuerte,\\
+que alguien puede atacarlo mejor que tú; no sea\\
+que muy luego la próvida Adrastina Egialea,\\
+corte, gimiendo, el sueño, y en su inquietud despierte\\
+a las caras doncellas, llorando a su marido\\
+legítimo, ese aqueo principal y cumplido,\\
+el domador Diomedes, de quien es noble esposa.\par
+Dice y resta el ícor, en las suyas tomando\\
+la mano que así cura, su cruel dolor calmando.\\
+Mas, como Atena y Hera presenciaran la cosa,\\
+picaron con palabra mordaz al dios Kronida.\\
+Y dijo, adelantándose, así la zarca diosa:\par
+--Zeus padre, aunque te irrite mi palabra atrevida,\\
+seguro es que Ciprina, tentando a alguna aquea\\
+de hermoso peplo, para que siga a los troyanos\\
+que tanto ama, al hacerle las caricias que emplea,\\
+se arañó en áureo bronce la delicada mano.\par
+Tal dijo. El padre de hombres y dioses sonrió,\\
+y a la áurea Afrodita llamando, así le habló:\par
+--El bélico trabajo no es para tí, hija mía,\\
+sino los de himeneo, con su dulce alegría.\\
+Que cuiden de eso Atena y Ares el dios ligero.\par
+Mientras así conversan, lánzase el buen guerrero\\
+Diomedes contra Eneas, aunque sabe que Apolo\\
+le tiene de su mano, pues ni al gran dios flechero\\
+respeta ya, deseando matar a aquél tan sólo,\\
+y quitarle el magnífico arnés. Tres veces carga\\
+con ansia de ultimarlo, y otras tantas Apolo\\
+se le opone, agitando su refulgente adarga.\\
+Mas, cuando igual a un numen por cuarta vez se obstina,\\
+Apolo, el grande arquero, terrible lo amenaza:\par
+--Tidida, piensa y vete; no quieras darte traza\\
+de igualarte a los dioses, que la raza divina\\
+nunca se asemejó a la terrestre humana raza.\par
+Así dice, y Tideides recula un poco, sólo\\
+por evitar la cólera del flechador Apolo.\par
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\pstart
+\setline{584}Antíloco, atacándolo, le hundió en la sien la espada,\\
+con que, del carro hermoso, cayó al suelo, anhelante,\\
+quedando un largo rato de cabeza, clavada\\
+toda ella hasta los hombros en la arena abundante.\\
+Tendiólo al fin por tierra la yunta alborotada,\\
+que picó hacia el ejército aqueo el valeroso\\
+Antíloco, Héctor, viéndolos, se arroja clamoroso,\\
+con las recias falanges troyanas que comanda\\
+Ares, al propio tiempo que Enío veneranda.\\
+Va ésta con el Tumulto feroz y escandaloso,\\
+mientras el dios, blandiendo su lanza prepotente,\\
+ya marcha a espaldas de Héctor, ya anda con él al frente.\\
+Tembló al verlo Diomedes el bravo, a la manera\\
+del que yendo extraviado por una gran pradera,\\
+dá con rápido río que echa al mar su corriente,\\
+y al ver la hirviente espuma, salta retrocediendo,\\
+así paró Tideides, a los suyos diciendo:\par
+--Oh amigos ¿cómo habremos de asombrarnos que sea\\
+Tan bravo el divino Héctor y audaz en la pelea?\\
+Siempre con él va un numen que la muerte le evita,\\
+Y ahora es Ares, que a un hombre mortal junto a él imita.
+\pend
+%
+\noindent-- -- -- -- -- --\par
+%
+\endnumbering
+\newpage
+%
+%
+\end{document}
