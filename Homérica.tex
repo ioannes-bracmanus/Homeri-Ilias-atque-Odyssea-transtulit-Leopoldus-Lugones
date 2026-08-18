@@ -1,27 +1,17 @@
 \documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
-\usepackage{footmisc}
-\usepackage{editio}
+\usepackage{literary-edition}
+\usepackage{critical-edition}
 \usepackage{polyglossia}
-\usepackage[paperwidth=17.50cm,paperheight=25.00cm,top=2.20cm,inner=2.65cm,outer=1.65cm,bottom=2.20cm]{geometry}
+\usepackage[paperwidth=16.50cm,paperheight=23.00cm,top=2.20cm,inner=2.65cm,outer=1.90cm,bottom=2.20cm]{geometry}
 \setmainlanguage{spanish}
-\setmainfont{Alt Standard}[RawFeature=lnum]
-\usepackage[noeledsec,nocritical,nofamiliar,noledgroup]{reledmac}
-\linenummargin{right}
-\setlength{\linenumsep}{-65pt}
+\setmainfont{Paskerville}[RawFeature=lnum]
 \usepackage[breaklinks=true,hidelinks]{hyperref}
+\usepackage[center,info,cam,a4]{crop}
+\crop[cam]
 %
 \title{\fontsize{40}{20}\selectfont\textbf{HOMÉRICA}}
-\date{\vspace{40pt} \textsc{Tradvcción fragmentaria de las obras homéricas por}\\\vspace*{14pt}{\huge\textsc{\textbf{Leopoldo Lvgones}}}\\\fontsize{40}{11}\selectfont{\vfill\textbf{\LaTeX}}}
-%\author{}
-%
-%Para que el título del índice esté en smcp.
-\usepackage{tocloft}	
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cfttoctitlefont}{\bfseries\scshape}
-%Salto de línea.
-\newsavebox{\dbox}
-\newcommand{\dlgo}[2]{\sbox{\dbox}{#1}\parbox[t]{\linewidth}{#1\strut\\[0pt]\hspace*{\wd\dbox}\hspace{\fontdimen2\font}#2\strut}}
+\date{\vspace{40pt} \textsc{Traducción fragmentaria de las obras homéricas por}\\\vspace*{14pt}{\huge\textsc{\textbf{Leopoldo Lugones}}}\\\fontsize{60}{11}\selectfont{\vfill\textbf{\texttt{\LaTeX}}}}
 %
 \newcommand{\ehuno}{\emph{\textbf{E.-H.\textsuperscript{(1)}}}}
 \newcommand{\ehdos}{\emph{\textbf{E.-H.\textsuperscript{(2)}}}}
@@ -29,11 +19,20 @@
 \newcommand{\ehctr}{\emph{\textbf{E.-H.\textsuperscript{(4)}}}}
 \newcommand{\neh}{\emph{\textbf{N. E.-H.}}}
 %
-\newcommand{\separator}{\noindent-- -- -- -- -- --\par}
+\newcommand{\separator}{%
+	\par\noindent
+	\hbox to \linewidth{\hspace*{15pt}\cleaders\hbox{.\quad}\hfil\hspace*{40pt}}%
+	\par
+}
+%
 %
 \usepackage{metalogo}
-\usepackage{lettrine}
-\AtBeginDocument{\setcounter{ballast}{50}}
+\renewcommand{\footTmark}[1]{\textsuperscript{*}}
+\renewcommand{\footTcall}[1]{}
+\linenummargin{outer}
+\nummarginsep{-12pt}{-40pt}
+\thepagelook{upter}
+\setlength{\pwidth}{0.90\textwidth}
 %
 %
 \begin{document}
@@ -44,7 +43,7 @@
 \null
 \vfill
 \begin{flushright}
-	Edición y composición en \XeLaTeX\ por Ioannes Bracmannus (2025).
+	Edición y composición en \texttt{\XeLaTeX} por \textsc{Ioannes Bracmanus} (2025).
 \end{flushright}
 \newpage
 %
@@ -53,12 +52,13 @@
 %
 \pagenumbering{Roman}
 \setcounter{page}{1}
+\simplehead{\textsc{Prefacio}}
 \section*{\centering\textsc{Prefacio}}
 \addcontentsline{toc}{section}{\textsc{Prefacio}}\par
 %
 \noindent\textsc{Las traducciones}, en el área de la literatura, además de tener su valor filológico o científico por su precisión, tienen valor estético. El gran \textsc{Leopoldo Lugones}, probablemente el mayor escritor que hubo en la historia de la literatura argentina, tradujo parte de las obras homéricas, desde episodios enteros hasta apenas unas líneas; y tal es su valor estético que merecen ser editadas por lo mismo, como cualquier traducción. El traductor, además de eximio helenista, fue un un auténtico compositor, un genio del \emph{verbo poético}; por lo mismo, además de imponerse la tarea de traducir fielmente a Homero desde su lengua, trasladando las acepciones al castellano con la mayor fidelidad posible, se impuso también la tarea de trasladar el ritmo, la forma. Para la traducción Lugones adopta el metro alejandrino por considerarlo, en su extensión y estructura, el más cercano al hexámetro dactílico griego, y es así que traduce la primera línea como «Canta, diosa, el encono de Aquiles Peleyades», a partir del mítico «Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος».\par
 %
-El sistema de siglado para agilizar las referencias es el siguiente: \ehuno = \emph{Estudios Helénicos I: La funesta Helena} (1923); \ehdos = \emph{Estudios Helénicos II: Un paladín de la Ilíada} (1923); \ehter = \emph{Estudios Helénicos III: La dama de la Odisea} (1924); \ehctr = \emph{Estudios Helénicos IV: Héctor el domador} (1924); \neh = \emph{Nuevos Estudios Helénicos} (1928). Todos fueron editados por la Biblioteca Argentina de Buenas Ediciones Literarias (Babel).\par
+El sistema de siglado para agilizar las referencias es el siguiente: \ehuno → \emph{Estudios Helénicos I: La funesta Helena} (1923); \ehdos → \emph{Estudios Helénicos II: Un paladín de la Ilíada} (1923); \ehter → \emph{Estudios Helénicos III: La dama de la Odisea} (1924); \ehctr → \emph{Estudios Helénicos IV: Héctor el domador} (1924); \neh → \emph{Nuevos Estudios Helénicos} (1928). Todos fueron editados por la Biblioteca Argentina de Buenas Ediciones Literarias (Babel).\par
 \newpage
 %
 \pagenumbering{gobble}
@@ -91,6 +91,16 @@ El sistema de siglado para agilizar las referencias es el siguiente: \ehuno = \e
 %Canto 6.
 \include{Rapsodias/6}
 \repage
+%
+%Canto 7.
+\include{Rapsodias/7}
+\repage
+%
+%Canto 8.
+\include{Rapsodias/8}
+%
+%Canto 9.
+\include{Rapsodias/9}
 %
 %
 \end{document}
